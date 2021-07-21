@@ -1,0 +1,17 @@
+require: rubocop-rails
+
+AllCops:
+  SuggestExtensions: false
+  TargetRubyVersion: 2.7.2
+  Exclude:
+    - 'bin/**/*'
+    - 'vendor/**/*'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'spec/rails_helper.rb'
+
+
+# Desabilito a documentação pois prefiro deixar o código em documentação viva.
+Documentation:
+ Enabled: false
