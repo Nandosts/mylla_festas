@@ -74,3 +74,6 @@ gem 'figaro', '~> 1.2'
 gem 'omniauth', '~> 2.0'
 
 gem 'devise-i18n'
+
+gem 'bootstrap', '~> 5.0'
+gem 'jquery-rails', '~> 4.4'
