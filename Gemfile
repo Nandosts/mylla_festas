@@ -72,3 +72,5 @@ gem 'devise', '~> 4.8'
 gem 'figaro', '~> 1.2'
 
 gem 'omniauth', '~> 2.0'
+
+gem 'devise-i18n'
