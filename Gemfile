@@ -11,6 +11,7 @@ gem 'puma', ">= 4.3.8"
 gem 'rails', '~> 5.2.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
+gem "loofah", ">= 2.3.1"
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
