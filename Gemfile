@@ -51,3 +51,5 @@ gem 'omniauth', '~> 2.0'
 gem 'rspec', '~> 3.10'
 gem 'rubocop-rails'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+
+gem 'font-awesome-rails', '~> 4.7'

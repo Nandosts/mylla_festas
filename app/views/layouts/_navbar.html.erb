@@ -1,32 +1,83 @@
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<%= stylesheet_link_tag 'navbar' %>
+<%= javascript_include_tag 'navbar' %>
+
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">Navbar w/ text</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="nav-logo"><%= image_tag('raposa.svg', height: '95%') %></div>
         <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link active" aria-current="page" href="/">Portifólio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Promoção/Eventos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#">Sobre nós</a>
             </li>
-          </ul>
-          <span class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Fale conosco</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Perguntas Frequentes</a>
+            </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa fa-user"></i>
               Usuário
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="users/sign_up">Registro</a></li>
               <li><a class="dropdown-item" href="/users/sign_in">Logar</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <%# <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li> %>
             </ul>
-          </span>
+          </li>
+          </ul>
+        </div>
+        <!-- Aperte nessas linhas para abrir a sideNav -->
+        <div class="burger">
+            <span onclick="openSide()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </span>
         </div>
       </div>
+
     </nav>
+
+    <!-- Começo da sidenav para mobile -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeSide()">&times;</a>
+  <div class="side-list">
+    <span class="side-item">
+      <a class="side-link active" aria-current="page" href="/">Portifólio</a>
+    </span>
+
+    <span class="side-item">
+      <a class="side-link" href="#">Promoção/Eventos</a>
+    </span>
+
+    <span class="side-item">
+      <a class="side-link" href="#">Sobre nós</a>
+    </span>
+
+    <span class="side-item">
+      <a class="side-link" href="#">Fale conosco</a>
+    </span>
+
+    <span class="side-item">
+      <a class="side-link" href="#">Perguntas Frequentes</a>
+    </span>
+
+    <span class="side-item">
+      <a href="/users/sign_in">Login</a>
+    </span>
+
+    <span class="side-item">
+        <a href="users/sign_up">Registro</a>
+    </span>
+  </div>
+</div>
+<!-- Fim da sidenav para mobile -->
