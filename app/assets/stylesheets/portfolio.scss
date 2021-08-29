@@ -1,0 +1,64 @@
+#portfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.center-box {
+    position: relative;
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+}
+
+.owl-one {
+    margin: 0;
+    max-width: 40vw;
+}
+
+.gallery-grid {
+    height: 60vh;
+}
+
+.portfolio-image{
+    margin: 0;
+    width: 8.5rem;
+    height: 8.5rem;
+}
+
+.raposa {
+    position: absolute;
+    top: -5%;
+    right: 0;
+    margin: 30px 20px;
+    width: 15vw;
+    height: 15vw;
+}
+
+.fa-angle-right {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+}
+
+.fa-angle-left {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+}
+
+@media (max-width: 767px) {
+    .portfolio-image{
+        margin: 0;
+        width: 10vw;
+        height: 10vw;
+    }
+    
+    .raposa {
+        position: absolute;
+        right: 0;
+        margin: 30px 20px;
+        width: 15vw;
+        height: 15vw;
+    }
+}

@@ -1,10 +1,53 @@
-<section id="portfolio">
-    <% if @gallery.images.attached? %>
-      <% @gallery.images.each_with_index do |photo, index| %>
-        <%= image_tag photo, class: 'w-100 d-block', alt: "Foto do par" %>
-      <% end %>
+<%= stylesheet_link_tag 'portfolio'%>
+<%= javascript_include_tag 'portfolio'%>
 
+<section id="portfolio">
+  <div class='center-box'>
+    <% if @gallery.images.attached? %>
+      <div class="owl-one owl-carousel owl-theme">
+        <% @gallery.images.each_slice(5).with_index  do |slice, index| %>
+            <div class="gallery-grid row flex-row-reverse ">
+            <span class='col-4'></span>
+          <% slice.each do |photo| %>
+              <div class="col-4">
+                  <%= image_tag photo, class:'portfolio-image', alt:'Foto da galeria'%>
+              </div>
+          <% end %>
+            </div>
+        <% end %>
+      </div>
     <% else %>
-      <p> picles </p>
+      <div class="owl-one owl-carousel owl-theme">
+        <div class="gallery-grid row flex-row-reverse ">
+            <span class='col-4'></span>
+            <div class="col-4">
+                <%= image_tag 'raposa', class:'portfolio-image', alt:'Foto da galeria'%>
+            </div>
+            
+            <div class="col-4">
+                <%= image_tag 'raposa', class:'portfolio-image', alt:'Foto da galeria'%>
+            </div>
+
+            <div class="col-4">
+                <%= image_tag 'raposa', class:'portfolio-image', alt:'Foto da galeria'%>
+            </div>
+
+            <div class="col-4">
+                <%= image_tag 'raposa', class:'portfolio-image', alt:'Foto da galeria'%>
+            </div>
+
+            <div class="col-4">
+                <%= image_tag 'raposa', class:'portfolio-image', alt:'Foto da galeria'%>
+            </div>
+
+            <div class="col-4">
+                <%= image_tag 'raposa', class:'portfolio-image', alt:'Foto da galeria'%>
+            </div>
+        </div>
+      <div>
     <% end %>
+    <div class='raposa'>
+      <%= image_tag 'raposa', alt:'Foto da galeria'%>
+    </div>
+  </div>
 </section>

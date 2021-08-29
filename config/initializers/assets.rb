@@ -15,4 +15,6 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 Rails.application.config.assets.precompile += %w( navbar.scss )
 Rails.application.config.assets.precompile += %w( navbar.js )
 Rails.application.config.assets.precompile += %w( galleries.scss )
+Rails.application.config.assets.precompile += %w( portfolio.js )
+Rails.application.config.assets.precompile += %w( portfolio.scss )
 
