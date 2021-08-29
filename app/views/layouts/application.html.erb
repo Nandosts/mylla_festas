@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-      <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#000000">
-    <meta name="description" content="Web site criado usando rails 5">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Web site criado usando rails 5">
 
-    <title>Mylla Festas</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+  <title>Mylla Festas</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-    <%= render 'layouts/navbar' %>
-    <!-- Pedido pelo devise -->
-    <span class="notice"><%= notice %></span>
-    <span class="alert"><%= alert %></span>
+<body>
+<%= render 'layouts/navbar' %>
+<!-- Pedido pelo devise -->
+<span class="notice"><%= notice %></span>
+<span class="alert"><%= alert %></span>
 
-    <%= yield %>
-  </body>
+<%= yield %>
+</body>
 </html>
