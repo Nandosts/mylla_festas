@@ -1,4 +1,5 @@
-  <%= @gallery.name %>
+<%= stylesheet_link_tag 'galleries' %>
+
   <%= form_with url: add_gallery_images_path(@gallery), local: true do |f| %>
     <div class="input-group mb-3">
       <div class="custom-file">
@@ -12,8 +13,26 @@
   <% end %>
 
   <% if @gallery.images.attached? %>
-      <% @gallery.images.each_with_index do |photo, index| %>
-        <%= image_tag photo, class: 'image', alt: "Foto do par" %>
+    <div class="gallery-images">
+      <% @gallery.images.each_with_index do |image, index| %>
+        <div class="manage-image">
+          <%= image_tag image, class: 'image-square', alt: "Foto do par" %>
+            <%= link_to delete_gallery_images_path(image_id: image.id, id: @gallery.id),
+                                        method: :delete,
+                                        data: { confirm: 'Tem certeza que deseja remover esta foto?' },
+                                        title:"Excluir Foto", local: true  do %>
+              <figcaption class="delete-figcaption">
+                  <i class="fa fa-trash-o fa-4x"></i>
+              </figcaption>
+            <% end %>
+        </div>
+      <% end %>
+    </div>
+      <%= link_to delete_all_gallery_images_path(id: @gallery.id), 
+        method: :delete,
+        data: { confirm: 'Tem certeza que deseja remover todas as fotos?' },
+        title: "Excluir todas as fotos" do %>
+        destruir tudo
       <% end %>
 
   <% else %>
