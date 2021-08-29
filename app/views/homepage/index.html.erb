@@ -1,13 +1,1 @@
-<div>
-  <h1>teste</h1>
-
-    <% if @gallery.images.attached? %>
-      <% @gallery.images.each_with_index do |photo, index| %>
-        <%= image_tag photo, class: 'w-100 d-block', alt: "Foto do par" %>
-      <% end %>
-
-    <% else %>
-      <p> picles </p>
-    <% end %>
-
-</div>
+  <%= render 'portfolio' %>

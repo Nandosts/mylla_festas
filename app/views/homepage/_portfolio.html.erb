@@ -1,0 +1,10 @@
+<section id="portfolio">
+    <% if @gallery.images.attached? %>
+      <% @gallery.images.each_with_index do |photo, index| %>
+        <%= image_tag photo, class: 'w-100 d-block', alt: "Foto do par" %>
+      <% end %>
+
+    <% else %>
+      <p> picles </p>
+    <% end %>
+</section>
