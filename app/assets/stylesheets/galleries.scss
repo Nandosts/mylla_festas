@@ -1,12 +1,23 @@
 // Place all the styles related to the galleries controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .gallery-images {
  display: flex;
- max-width: 100vw;
+ justify-content: space-evenly;
+ align-items: center;
+ width: 50vw;
+ height: 50vh;
+ overflow: auto;
+ background: white;
+ border: 5px solid rgb(218, 156, 0);
+ border-radius: 20px;
  flex-flow: row wrap;
- gap: 10px;
+ padding: 15px;
 }
 
 .manage-image {
@@ -15,15 +26,18 @@
 
 
 .image-square {
+    margin: 10px;
     width: 100px;
     height: 100px;
     object-fit: fill;
+    z-index: -1;
 }
 
 .delete-figcaption {
     cursor: pointer;
     position: absolute;
     top: 0px;
+    margin: 10px;
     width: 100px;
     height: 100px;
     opacity: 0;
@@ -43,4 +57,35 @@
   color: white;
   width: 50px;
   height: 50px;
+}
+
+#foto-galeria {
+  content: "Button Text";
+}
+
+.custom-file-button {
+  background: red;
+}
+
+.input-group-text {
+  background: rgb(113, 171, 192);
+  border-radius: 50px;
+  width: 7rem;
+}
+.input-group-text:hover {
+filter: brightness(100%);
+}
+
+.custom-file {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 550px) {
+  .gallery-images {
+  width: 80vw;
+  }
 }

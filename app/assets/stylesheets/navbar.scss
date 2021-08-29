@@ -1,9 +1,10 @@
 .navbar {
-    background: radial-gradient(ellipse at top, rgba(255, 241, 214, 0.945), rgba(255, 197, 80, 0.54), rgba(255, 170, 0, 0.774));
+    background: radial-gradient(ellipse at top, rgb(255, 241, 214), rgb(255, 197, 80), rgb(255, 170, 0));
     * {
         color: #39393A;
     }
     position: sticky;
+    z-index: 100;
     top: 0;
     height: 4.5rem;
 }

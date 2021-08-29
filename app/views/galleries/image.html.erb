@@ -1,22 +1,11 @@
 <%= stylesheet_link_tag 'galleries' %>
-
-  <%= form_with url: add_gallery_images_path(@gallery), local: true do |f| %>
-    <div class="input-group mb-3">
-      <div class="custom-file">
-        <%= f.file_field :images, multiple: true, class: 'custom-file-input', id: 'foto-galeria', accept: '.png, .jpg, .jpeg', required: true %>
-        <%= f.label "Foto da galeria", class: 'custom-file-label' %>
-      </div>
-      <div class="input-group-append">
-        <%= f.submit "Upload", class: "input-group-text bg-primary text-light" %>
-      </div>
-    </div>
-  <% end %>
+<section>
 
   <% if @gallery.images.attached? %>
     <div class="gallery-images">
       <% @gallery.images.each_with_index do |image, index| %>
         <div class="manage-image">
-          <%= image_tag image, class: 'image-square', alt: "Foto do par" %>
+          <%= image_tag image, class: 'image-square', alt: "Foto da galeria" %>
             <%= link_to delete_gallery_images_path(image_id: image.id, id: @gallery.id),
                                         method: :delete,
                                         data: { confirm: 'Tem certeza que deseja remover esta foto?' },
@@ -28,13 +17,24 @@
         </div>
       <% end %>
     </div>
+
+  <%= form_with url: add_gallery_images_path(@gallery), local: true do |f| %>
+      <div class="custom-file">
+        <%# f.label "", class: 'custom-file-label', for: 'foto-par', "aria-describedby": "inputGroupFoto" %>
+        <%= f.file_field :images, multiple: true, class: 'custom-file-input', id: 'foto-galeria', accept: '.png, .jpg, .jpeg', required: true %>
+      <%= f.submit "Adicionar", class: "btn btn-primary" %>
+      </div>
+  <% end %>
+      <br>
       <%= link_to delete_all_gallery_images_path(id: @gallery.id), 
         method: :delete,
         data: { confirm: 'Tem certeza que deseja remover todas as fotos?' },
         title: "Excluir todas as fotos" do %>
-        destruir tudo
+      <br>
+        <button type="button" class="btn btn-danger">Destruir tudo</button>
       <% end %>
 
   <% else %>
       <p> Adicione imagens! </p>
   <% end %>
+</section>
