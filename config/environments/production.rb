@@ -90,6 +90,13 @@ Rails.application.configure do
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
 
+
+
+  config.assets.compile = true
+
+  config.assets.precompile = ['.js', '.scss' ,'.css', '*.css.erb']
+
+
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
