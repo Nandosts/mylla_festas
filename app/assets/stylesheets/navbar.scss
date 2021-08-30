@@ -22,6 +22,10 @@
   min-width: 100px;
 }
 
+.nav-link {
+  font-size: 1.3rem;
+}
+
 .nav-link:hover {
   filter: brightness(100%) drop-shadow(7px 7px 5px rgba(0, 0, 0, 0.5));
   text-decoration: none;
