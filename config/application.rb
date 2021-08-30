@@ -18,5 +18,7 @@ module MyllaFestas
 
     # Setting default devise language
     config.i18n.default_locale = :'pt-BR'
+
+    config.action_dispatch.cookies_same_site_protection = :strict
   end
 end
