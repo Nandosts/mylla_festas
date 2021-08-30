@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="640516ff-4cba-45fe-9066-b7565b10a279" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/portfolio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/galleries.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/galleries.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/portfolio.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/portfolio.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/galleries_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/galleries_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/galleries/image.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/galleries/image.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/homepage/_portfolio.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homepage/_portfolio.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/homepage/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homepage/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1xRm1Eoa3D1DALZcgC9mcFBOTRT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="640516ff-4cba-45fe-9066-b7565b10a279" name="Changes" comment="" />
+      <created>1630326066894</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1630326066894</updated>
+      <workItem from="1630326071602" duration="44000" />
+      <workItem from="1630326141903" duration="133000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

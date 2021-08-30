@@ -1,64 +1,135 @@
-#portfolio{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.center-box {
-    position: relative;
-    display: flex;
-    width: 50vw;
-    justify-content: center;
+#portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.owl-one {
-    margin: 0;
-    max-width: 40vw;
+.center-box {
+  position: relative;
+  display: flex;
+  width: 50vw;
+  justify-content: center;
+}
+
+.owl-carousel {
+  margin: 0;
+  max-width: 50vw;
+  border: 10px solid #fff;
+  background: radial-gradient(ellipse at top, rgb(255, 241, 214), rgba(255, 197, 80, 0.54), rgba(255, 170, 0, 0.63));
+  border-radius: 10%;
+  padding: 2vh 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .gallery-grid {
-    height: 60vh;
+  min-height: 50vh;
+  height: auto;
+
+  span {
+    max-height: 10rem;
+  }
 }
 
-.portfolio-image{
-    margin: 0;
-    width: 8.5rem;
-    height: 8.5rem;
+.slice-img {
+  displaY: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-image {
+  margin: 10px;
+  min-width: 8.5rem;
+  width: 10vw;
+  min-height: 8.5rem;
+  height: 10vw;
+  object-fit: cover;
 }
 
 .raposa {
-    position: absolute;
-    top: -5%;
-    right: 0;
-    margin: 30px 20px;
-    width: 15vw;
-    height: 15vw;
+  position: absolute;
+  top: 5vh;
+  right: 0;
+  margin: 20px;
+  width: 15vw;
+  height: 15vw;
+  z-index: 2;
 }
 
 .fa-angle-right {
-    position: absolute;
-    bottom: 10%;
-    right: 0;
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
 }
 
 .fa-angle-left {
-    position: absolute;
-    bottom: 10%;
-    left: 0;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
 }
 
-@media (max-width: 767px) {
-    .portfolio-image{
-        margin: 0;
-        width: 10vw;
-        height: 10vw;
+@media (max-width: 992px) and (orientation: portrait) {
+  .owl-carousel {
+    max-width: inherit;
+    width: 85vw !important;
+  }
+
+  .gallery-grid {
+    min-width: 80vw;
+    padding: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    display: flex;
+    flex-direction: row !important;
+  }
+  .slice-img {
+    max-width: 50%;
+    padding: 0;
+  }
+
+
+  .portfolio-image {
+    margin: 0;
+    height: 7rem !important;
+    width: 7rem !important;
+    padding: 0.1rem;
+  }
+
+  .raposa {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) and (max-height: 992px) and (orientation: landscape) {
+
+  .owl-carousel {
+    max-width: inherit;
+    width: 80vw !important;
+  }
+
+  .gallery-grid {
+    max-width: inherit;
+    width: 70vw !important;
+    height: auto !important;
+
+    span {
+      display: none;
     }
-    
-    .raposa {
-        position: absolute;
-        right: 0;
-        margin: 30px 20px;
-        width: 15vw;
-        height: 15vw;
-    }
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .portfolio-image {
+    margin: 0;
+    height: 8rem !important;
+    width: 8rem !important;
+    padding: 0.1rem;
+  }
+
+  .raposa {
+    display: none;
+  }
 }

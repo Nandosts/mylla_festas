@@ -1,12 +1,14 @@
 .navbar {
-    background: radial-gradient(ellipse at top, rgb(255, 241, 214), rgba(255, 197, 80, 0.54), rgba(255, 170, 0, 0.63));
-    * {
-        color: #39393A;
-    }
-    position: sticky;
-    z-index: 100;
-    top: 0;
-    height: 4.5rem;
+  background: radial-gradient(ellipse at top, rgb(255, 241, 214), rgba(255, 197, 80, 0.54), rgba(255, 170, 0, 0.63));
+
+  * {
+    color: #39393A;
+  }
+
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  height: 4.5rem;
 }
 
 .container-fluid {
@@ -15,12 +17,12 @@
 }
 
 .nav-logo {
-    margin: 0 2vw;
-    height: 100%;
-    min-width: 100px;
+  margin: 0 2vw;
+  height: 100%;
+  min-width: 100px;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   filter: brightness(100%) drop-shadow(7px 7px 5px rgba(0, 0, 0, 0.5));
   text-decoration: none;
   color: black;
@@ -28,30 +30,30 @@
 }
 
 ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* As três barrinhas em visualização de menores dispositivos*/
 
-.burger{
+.burger {
   display: none;
 }
-  
-.burger div{
+
+.burger div {
   width: 25px;
   height: 5px;
   background-color: black;
   margin: 5px;
 }
-  
+
 @media (max-width: 991px) {
-  body{
+  body {
     overflow-x: hidden; /* Tirar rolamento horizontal */
   }
 
-  .burger{
+  .burger {
     margin-right: 10px;
     display: block;
     cursor: pointer;
@@ -71,7 +73,7 @@ ul {
   .navbar-nav {
     overflow: auto; /* Torna a sidenav rolável se tiver mais elementos do que cabe. */
   }
-  
+
   .side-list {
     overflow: auto; /* Torna a sidenav rolável se tiver mais elementos do que cabe. */
     margin-top: 15%;
@@ -84,6 +86,7 @@ ul {
   .side-item {
     margin-bottom: 50px;
   }
+
   /* Os links de navegação da sidenav */
   a {
     font-family: 'Libre Baskerville', serif;
@@ -115,6 +118,7 @@ ul {
   margin-left: 0px;
   color: red;
 }
+
 .sidenav .closebtn:hover {
   text-decoration: none;
   background: none;
@@ -131,12 +135,14 @@ ul {
   .navbar {
     width: inherit;
   }
-  .sidenav a {font-size: 18px;}
-  
+  .sidenav a {
+    font-size: 18px;
+  }
+
   .nav-logo {
-      margin: 0 4vw;
-      width: auto;
-      height: 50px;
+    margin: 0 4vw;
+    width: auto;
+    height: 50px;
   }
 }
 

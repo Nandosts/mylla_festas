@@ -21,7 +21,7 @@ class GalleriesController < ApplicationController
     @img = ActiveStorage::Attachment.find(params[:image_id])
     begin
       @img&.purge
-    redirect_to manage_images_path
+      redirect_to manage_images_path
     rescue StandardError => e
       flash[:error] = 'Erro ao remover foto!'
       redirect_to root_path

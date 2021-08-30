@@ -6,35 +6,35 @@
       <% @gallery.images.each_with_index do |image, index| %>
         <div class="manage-image">
           <%= image_tag image, class: 'image-square', alt: "Foto da galeria" %>
-            <%= link_to delete_gallery_images_path(image_id: image.id, id: @gallery.id),
-                                        method: :delete,
-                                        data: { confirm: 'Tem certeza que deseja remover esta foto?' },
-                                        title:"Excluir Foto", local: true  do %>
-              <figcaption class="delete-figcaption">
-                  <i class="fa fa-trash-o fa-4x"></i>
-              </figcaption>
-            <% end %>
+          <%= link_to delete_gallery_images_path(image_id: image.id, id: @gallery.id),
+                      method: :delete,
+                      data: { confirm: 'Tem certeza que deseja remover esta foto?' },
+                      title: "Excluir Foto", local: true do %>
+            <figcaption class="delete-figcaption">
+              <i class="fa fa-trash-o fa-4x"></i>
+            </figcaption>
+          <% end %>
         </div>
       <% end %>
     </div>
 
-  <%= form_with url: add_gallery_images_path(@gallery), local: true do |f| %>
-      <div class="custom-file">
-        <%# f.label "", class: 'custom-file-label', for: 'foto-par', "aria-describedby": "inputGroupFoto" %>
-        <%= f.file_field :images, multiple: true, class: 'custom-file-input', id: 'foto-galeria', accept: '.png, .jpg, .jpeg', required: true %>
-      <%= f.submit "Adicionar", class: "btn btn-primary" %>
-      </div>
-  <% end %>
-      <br>
-      <%= link_to delete_all_gallery_images_path(id: @gallery.id), 
-        method: :delete,
-        data: { confirm: 'Tem certeza que deseja remover todas as fotos?' },
-        title: "Excluir todas as fotos" do %>
-      <br>
-        <button type="button" class="btn btn-danger">Destruir tudo</button>
-      <% end %>
 
   <% else %>
-      <p> Adicione imagens! </p>
+    <p> Adicione imagens! </p>
+  <% end %>
+  <%= form_with url: add_gallery_images_path(@gallery), local: true do |f| %>
+    <div class="custom-file">
+      <%# f.label "", class: 'custom-file-label', for: 'foto-par', "aria-describedby": "inputGroupFoto" %>
+      <%= f.file_field :images, multiple: true, class: 'custom-file-input', id: 'foto-galeria', accept: '.png, .jpg, .jpeg', required: true %>
+      <%= f.submit "Adicionar", class: "btn btn-primary" %>
+    </div>
+  <% end %>
+  <br>
+  <%= link_to delete_all_gallery_images_path(id: @gallery.id),
+              method: :delete,
+              data: { confirm: 'Tem certeza que deseja remover todas as fotos?' },
+              title: "Excluir todas as fotos" do %>
+    <br>
+    <button type="button" class="btn btn-danger">Destruir tudo</button>
   <% end %>
 </section>

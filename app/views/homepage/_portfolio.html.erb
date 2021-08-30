@@ -1,53 +1,28 @@
-<%= stylesheet_link_tag 'portfolio'%>
-<%= javascript_include_tag 'portfolio'%>
+<%= stylesheet_link_tag 'portfolio' %>
+<%= javascript_include_tag 'portfolio' %>
 
 <section id="portfolio">
   <div class='center-box'>
     <% if @gallery.images.attached? %>
-      <div class="owl-one owl-carousel owl-theme">
-        <% @gallery.images.each_slice(5).with_index  do |slice, index| %>
-            <div class="gallery-grid row flex-row-reverse ">
-            <span class='col-4'></span>
-          <% slice.each do |photo| %>
-              <div class="col-4">
-                  <%= image_tag photo, class:'portfolio-image', alt:'Foto da galeria'%>
+      <div class="owl-carousel owl-theme">
+        <% @gallery.images.each_slice(5).with_index do |slice, index| %>
+          <div class="gallery-grid row flex-row-reverse">
+            <span class='col-lg-4'></span>
+            <% slice.each do |photo| %>
+              <div class="slice-img col-lg-4 col-md col-sm">
+                <%= image_tag photo, class: 'portfolio-image', alt: 'Foto da galeria' %>
               </div>
-          <% end %>
-            </div>
+            <% end %>
+          </div>
         <% end %>
       </div>
     <% else %>
-      <div class="owl-one owl-carousel owl-theme">
-        <div class="gallery-grid row flex-row-reverse ">
-            <span class='col-4'></span>
-            <div class="col-4">
-                <%= image_tag 'raposa', class:'portfolio-image', alt:'Foto da galeria'%>
-            </div>
-            
-            <div class="col-4">
-                <%= image_tag 'raposa', class:'portfolio-image', alt:'Foto da galeria'%>
-            </div>
+      
+      <a href="/gerenciar_imagens">Botão temporário - adicione fotos aqui!</a>
 
-            <div class="col-4">
-                <%= image_tag 'raposa', class:'portfolio-image', alt:'Foto da galeria'%>
-            </div>
-
-            <div class="col-4">
-                <%= image_tag 'raposa', class:'portfolio-image', alt:'Foto da galeria'%>
-            </div>
-
-            <div class="col-4">
-                <%= image_tag 'raposa', class:'portfolio-image', alt:'Foto da galeria'%>
-            </div>
-
-            <div class="col-4">
-                <%= image_tag 'raposa', class:'portfolio-image', alt:'Foto da galeria'%>
-            </div>
-        </div>
-      <div>
     <% end %>
     <div class='raposa'>
-      <%= image_tag 'raposa', alt:'Foto da galeria'%>
+      <%= image_tag 'raposa', alt: 'Foto da galeria' %>
     </div>
   </div>
 </section>

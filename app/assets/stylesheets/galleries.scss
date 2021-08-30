@@ -6,46 +6,47 @@ section {
   flex-direction: column;
   align-items: center;
 }
+
 .gallery-images {
- display: flex;
- justify-content: space-evenly;
- align-items: center;
- width: 50vw;
- height: 50vh;
- overflow: auto;
- background: white;
- border: 5px solid rgb(218, 156, 0);
- border-radius: 20px;
- flex-flow: row wrap;
- padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50vw;
+  height: 50vh;
+  overflow: auto;
+  background: white;
+  border: 5px solid rgb(218, 156, 0);
+  border-radius: 20px;
+  flex-flow: row wrap;
+  padding: 15px;
 }
 
 .manage-image {
-    position: relative;
+  position: relative;
 }
 
 
 .image-square {
-    margin: 10px;
-    width: 100px;
-    height: 100px;
-    object-fit: fill;
-    z-index: -1;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  object-fit: fill;
+  z-index: -1;
 }
 
 .delete-figcaption {
-    cursor: pointer;
-    position: absolute;
-    top: 0px;
-    margin: 10px;
-    width: 100px;
-    height: 100px;
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0);
-    transition: all ease-in-out .3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all ease-in-out .3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .delete-figcaption:hover {
@@ -72,8 +73,9 @@ section {
   border-radius: 50px;
   width: 7rem;
 }
+
 .input-group-text:hover {
-filter: brightness(100%);
+  filter: brightness(100%);
 }
 
 .custom-file {
@@ -86,6 +88,6 @@ filter: brightness(100%);
 
 @media (max-width: 550px) {
   .gallery-images {
-  width: 80vw;
+    width: 80vw;
   }
 }
