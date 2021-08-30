@@ -16,7 +16,6 @@
 //= require_tree .
 
 //= require jquery3
-//= require jquery_ujs
 //= require popper
 //= require bootstrap
 //= require owl.carousel
