@@ -166,6 +166,9 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.4.2)
       loofah (~> 2.3)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
     rails_on_heroku (0.0.2)
       rails_serve_static_assets
       rails_stdout_logging
@@ -298,6 +301,7 @@ DEPENDENCIES
   pg (>= 0.18, < 2.0)
   puma (>= 4.3.8)
   rails (~> 5.2.0)
+  rails_12factor
   rails_on_heroku (~> 0.0.2)
   rspec (~> 3.10)
   rubocop-rails

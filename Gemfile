@@ -52,6 +52,7 @@ gem 'owlcarousel-rails'
 gem 'rspec', '~> 3.10'
 gem 'rubocop-rails'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+gem 'rails_12factor'
 
 gem 'font-awesome-rails', '~> 4.7'
 
