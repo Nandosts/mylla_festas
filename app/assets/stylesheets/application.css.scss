@@ -28,4 +28,6 @@ body {
     background: #FFF175;
     border: solid 25px #DB8F3C;
     min-height: 100vh;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
