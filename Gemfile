@@ -49,11 +49,11 @@ gem 'figaro', '~> 1.2'
 gem 'jquery-rails', '~> 4.4'
 gem 'omniauth', '~> 2.0'
 gem 'owlcarousel-rails'
+gem 'rails_12factor'
 gem 'rspec', '~> 3.10'
 gem 'rubocop-rails'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
-gem 'rails_12factor'
 
 gem 'font-awesome-rails', '~> 4.7'
 
-gem "rails_on_heroku", "~> 0.0.2"
+gem 'rails_on_heroku', '~> 0.0.2'
