@@ -16,11 +16,8 @@
 </head>
 
 <body>
-<%= render 'layouts/navbar' %>
-<!-- Pedido pelo devise -->
-<span class="notice"><%= notice %></span>
-<span class="alert"><%= alert %></span>
-
-<%= yield %>
+  <%= render 'layouts/navbar' %>
+  <%= render 'layouts/flash-notification-bar' %>
+  <%= yield %>
 </body>
 </html>

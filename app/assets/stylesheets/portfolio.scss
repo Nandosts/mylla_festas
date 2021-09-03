@@ -5,6 +5,8 @@
   position: relative;
   height: 100vh;
   width: 100%;
+  background: url(mylla-bolhas.png);
+  background-size: contain;
 }
 
 .center-box {
@@ -18,7 +20,7 @@
   margin: 0;
   max-width: 50vw;
   border: 10px solid #fff;
-  background: radial-gradient(ellipse at top, rgb(255, 241, 214), rgba(255, 197, 80, 0.54), rgba(255, 170, 0, 0.63));
+  background: radial-gradient(ellipse at top, rgb(255, 241, 214), rgb(255, 197, 80), rgb(255, 170, 0));
   border-radius: 10%;
   padding: 2vh 5vw;
   display: flex;
